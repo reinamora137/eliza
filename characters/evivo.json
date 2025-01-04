@@ -16,7 +16,11 @@
           "shouldIgnoreDirectMessages": false,
           "shouldRespondOnlyToMentions": false,
           "shouldOnlyJoinInAllowedGroups": false,
-          "messageSimilarityThreshold": 0.8
+          "messageSimilarityThreshold": 0.8,
+          "isPartOfTeam": false,
+          "teamAgentIds": [],
+          "teamLeaderId": "",
+          "teamMemberInterestKeywords": []
         },
         "slack": {
           "shouldIgnoreBotMessages": true,
