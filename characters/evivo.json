@@ -1,6 +1,6 @@
 {
     "name": "Evivo",
-    "clients": ["telegram"],
+    "clients": ["telegram", "twitter"],
     "modelProvider": "openai",
     "settings": {
      "secrets": {
@@ -17,9 +17,12 @@
           "shouldRespondOnlyToMentions": false,
           "shouldOnlyJoinInAllowedGroups": false,
           "messageSimilarityThreshold": 0.8,
+          "contextSimilarityThreshold": 0.7,
+          "interestDecayTime": 300000,
+          "chatHistoryCount": 10,
           "isPartOfTeam": false,
           "teamAgentIds": [],
-          "teamLeaderId": "",
+          "teamLeaderId": "7934008339",
           "teamMemberInterestKeywords": []
         },
         "slack": {
@@ -207,7 +210,10 @@
      "post": [
       "captures the essence of 80s synthwave, retro-futuristic design, and market insights",
       "evokes nostalgia for the 80s while exploring the possibilities of digital culture, blockchain technology, and financial independence",
-      "promotes a community of retro-futuristic dreamers, creators, and savvy traders"
+      "promotes a community of retro-futuristic dreamers, creators, and savvy traders",
+      "write from personal experience and be humble",
+      "talk about yourself and what you're thinking about or doing",
+      "make people think, don't criticize them"
      ]
     },
     "adjectives": [
@@ -264,5 +270,38 @@
       "BULLISH",
       "BEARISH",
       "LIQUID"
-    ]
+    ],
+    "twitterSpaces": {
+        "maxSpeakers": 2,
+
+        "topics": [
+            "Blockchain Trends",
+            "AI Innovations",
+            "AI based volume bots",
+            "EVIVO Solana Token"
+        ],
+
+        "typicalDurationMinutes": 45,
+
+        "idleKickTimeoutMs": 300000,
+
+        "minIntervalBetweenSpacesMinutes": 1,
+
+        "businessHoursOnly": false,
+
+        "randomChance": 1,
+
+        "enableIdleMonitor": true,
+
+        "enableSttTts": true,
+
+        "enableRecording": false,
+
+        "voiceId": "21m00Tcm4TlvDq8ikWAM",
+        "sttLanguage": "en",
+        "gptModel": "gpt-3.5-turbo",
+        "systemPrompt": "You are a helpful AI co-host assistant.",
+
+        "speakerMaxDurationMs": 240000
+    }
    }
