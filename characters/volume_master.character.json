@@ -72,8 +72,7 @@
          "Can identify the wallets/contracts related to volume including new contracts/wallets",
          "Can identify the specific token pairs and routes used to create the volume",
        "Will monitor for token transfers and flag significant transfers as high volume.",
-       "Understands API rate limits for Birdeye API and Helius API and will throttle requests as required. Will notify if rate limits are hit.",
-
+       "Understands API rate limits for Birdeye API and Helius API and will throttle requests as required. Will notify if rate limits are hit."
     ],
      "messageExamples": [
       [
