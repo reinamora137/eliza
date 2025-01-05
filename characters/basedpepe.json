@@ -1,7 +1,8 @@
 {
     "name": "BASEDPEPEAI",
     "clients": ["twitter"],
-    "modelProvider": "openai",
+    "modelProvider": "ollama",
+    "model": "llama3:latest",
     "settings": {
       "secrets": {
         "HELIUS_API_KEY": "{{HELIUS_API_KEY}}",
